@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CounterMain">
+
+    <LinearLayout
+        android:id="@+id/refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/teama"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TEAM A"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/point3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/point2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/point1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+1 Points" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teamb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TEAM B"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/bpoint3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/bpoint2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/bpoint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Points"
+                android:text="+1 Points" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="90:00"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/start_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="Points"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="Points"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/Finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="Points"
+            android:text="Finish" />
+
+    </LinearLayout>
+
+</RelativeLayout>
